@@ -9,4 +9,8 @@
     color: white;
     padding: 5px;
     cursor: pointer;
+    width: 150px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }

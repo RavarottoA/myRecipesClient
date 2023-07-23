@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { getAllRecipes } from '../../services/getAllRecipes';
 import RecipeCard from './components/recipeCard';
-import { useFilterRecipes } from './customHooks/useFilterRecipes';
 import styles from './styles.module.css';
 
 const MyRecipes = () => {
