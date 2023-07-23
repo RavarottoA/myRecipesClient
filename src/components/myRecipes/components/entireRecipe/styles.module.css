@@ -1,0 +1,35 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.editBtn {
+    background-color: orange;
+}
+
+.deleteBtn {
+    background-color: red;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.subTxt {
+    font-size: 1rem;
+    font-weight: 400;
+}
