@@ -4,6 +4,8 @@ import Navbar from './components/navbar';
 import EntireRecipe from './components/myRecipes/components/entireRecipe';
 import RecipeForm from './components/recipeForm';
 import './App.css';
+import SignIn from './views/SignIn';
+import SignUp from './views/SignUp';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path='/new-recipe' element={<RecipeForm />} />
         <Route path='/recipe' element={<EntireRecipe />} />
         <Route path='/update-recipe' element={<RecipeForm />} />
+        <Route path='/signIn' element={<SignIn />} />
+        <Route path='/signUp' element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   );

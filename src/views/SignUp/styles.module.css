@@ -1,0 +1,29 @@
+input {
+    
+}
+
+.mainContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background: none;
+    border: none;
+    color: rgb(64, 142, 64);
+    font-weight: bold;
+}
