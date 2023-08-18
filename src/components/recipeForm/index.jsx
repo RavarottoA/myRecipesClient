@@ -5,7 +5,7 @@ import { getRecipe } from "../../services/getRecipe";
 import { updateRecipe } from "../../services/updateRecipe";
 import styles from "./styles.module.css";
 
-const RecipeForm = ({setShowNewRecipeSection}) => {
+const RecipeForm = ({ setShowNewRecipeSection }) => {
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -28,7 +28,7 @@ const RecipeForm = ({setShowNewRecipeSection}) => {
         setRecipe(
             {
                 ...recipe,
-                [e.target.name]: e.target.value 
+                [e.target.name]: e.target.value
             }
         );
     };
@@ -36,11 +36,12 @@ const RecipeForm = ({setShowNewRecipeSection}) => {
     const handleDoneClick = async () => {
         if (id) {
             updateRecipe(id, recipe);
+        } else {
+            createRecipe(recipe);
+        }
+        setTimeout(() => {
             navigate("/");
-            return;
-        };
-        createRecipe(recipe);
-        navigate("/");
+        }, 300);
     };
 
     return (
@@ -49,12 +50,12 @@ const RecipeForm = ({setShowNewRecipeSection}) => {
                 Title:
             </label>
             <textarea
-                    type="text"
-                    name="title"
-                    value={recipe.title}
-                    className={styles.titleTextarea}
-                    onChange={handleOnChange}
-                />
+                type="text"
+                name="title"
+                value={recipe.title}
+                className={styles.titleTextarea}
+                onChange={handleOnChange}
+            />
             <label>
                 Ingredients:
             </label>
