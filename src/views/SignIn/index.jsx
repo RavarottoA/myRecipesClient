@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { loginUser } from '../../services/loginUser';
 
 const SignIn = () => {
 
@@ -7,6 +8,7 @@ const SignIn = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        loginUser({email, password});
     };
 
     return (
